@@ -1,7 +1,7 @@
 import os
 
-images_folder = 'frames6'
-labels_folder = 'labels6'
+images_folder = 'frames345'
+labels_folder = 'labels345'
 
 image_files = {os.path.splitext(f)[0] for f in os.listdir(images_folder) if os.path.isfile(os.path.join(images_folder, f))}
 label_files = {os.path.splitext(f)[0] for f in os.listdir(labels_folder) if os.path.isfile(os.path.join(labels_folder, f))}
