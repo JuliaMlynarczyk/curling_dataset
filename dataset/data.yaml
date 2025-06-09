@@ -1,0 +1,5 @@
+train: images/train
+val: images/val
+
+nc: 4
+names: ["stone", "broom", "player", "scoring_field"]

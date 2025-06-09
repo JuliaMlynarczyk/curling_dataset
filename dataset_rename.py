@@ -14,6 +14,7 @@ os.makedirs(output_lbl, exist_ok=True)
 # Processing
 img_count = 0
 for img_folder, lbl_folder in zip(image_folders, label_folders):
+    print(f"Processing folder: {img_folder} and {lbl_folder}")
     for img_path in glob(os.path.join(img_folder, "*")):
         base = os.path.splitext(os.path.basename(img_path))[0]
         ext = os.path.splitext(img_path)[1]
